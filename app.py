@@ -2,6 +2,11 @@ import streamlit as st
 import datetime
 import requests
 
+st.set_page_config(
+    page_title="TaxiFareModel",  # => Quick reference - Streamlit
+    page_icon="🚖",
+    layout="centered",  # wide
+)
 
 '''
 # TaxiFareModel front
@@ -37,23 +42,23 @@ st.write('You selected following time: ', pickup_time)
 pickup_datetime = f"{pickup_date} {pickup_time}"
 
 # Ask for pickup longitude
-pickup_longitude = st.number_input('Pickup longitude')  #52.341261663803955
+pickup_longitude = st.text_input('Pickup longitude')  #52.341261663803955
 st.write('Your pickup longitude is: ', pickup_longitude)
 
 # Ask for pickup latitude
-pickup_latitude = st.number_input('Pickup latitude')  # 4.854343157542917
+pickup_latitude = st.text_input('Pickup latitude')  # 4.854343157542917
 st.write('Your pickup latitude is: ', pickup_latitude)
 
 # Ask for dropoff longitude
-dropoff_longitude = st.number_input('Dropoff longitude')  #  52.341261663803955
+dropoff_longitude = st.text_input('Dropoff longitude')  #  52.341261663803955
 st.write('Your dropoff longitude is: ', dropoff_longitude)
 
 # Ask for pickup latitude
-dropoff_latitude = st.number_input('Dropoff latitude')  # 4.854343157542917
+dropoff_latitude = st.text_input('Dropoff latitude')  # 4.854343157542917
 st.write('Your dropoff latitude is: ', dropoff_latitude)
 
 # Ask for passenger count
-passenger_count = st.number_input('Passenger count', 2)
+passenger_count = st.text_input('Passenger count', 2)
 st.write('Your passenger count is: ', passenger_count)
 
 '''
