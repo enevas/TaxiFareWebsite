@@ -46,25 +46,25 @@ pickup_datetime = f"{pickup_date} {pickup_time}"
 # Ask for pickup longitude
 pickup_longitude = st.number_input(
     'Pickup longitude', value=-73.975836205698,
-    step=1e-5)  #40.75308327937108, -73.975836205698
+    step=1e-8)  #40.75308327937108, -73.975836205698
 st.write('Your pickup longitude is: ', pickup_longitude)
 
 # Ask for pickup latitude
 pickup_latitude = st.number_input(
-    'Pickup latitude', step=1e-5,
+    'Pickup latitude', step=1e-8,
     value=-40.75308327937108)  # 4.854343157542917
 st.write('Your pickup latitude is: ', pickup_latitude)
 
 # Ask for dropoff longitude
 dropoff_longitude = st.number_input(
-    'Dropoff longitude', step=1e-5,
-    value=-73.975836205698)  #  52.341261663803955
+    'Dropoff longitude', step=1e-8,
+    value=-73.97368251324504)  #  -73.97437988130339
 st.write('Your dropoff longitude is: ', dropoff_longitude)
 
 # Ask for pickup latitude
 dropoff_latitude = st.number_input(
-    'Dropoff latitude', step=1e-5,
-    value=40.75308327937108)  # 4.854343157542917
+    'Dropoff latitude', step=1e-8,
+    value=40.78262576554464)  # 40.78262576554464
 st.write('Your dropoff latitude is: ', dropoff_latitude)
 
 # Ask for passenger count
